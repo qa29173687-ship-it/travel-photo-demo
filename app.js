@@ -620,6 +620,7 @@ function destroyMaps() {
 }
 
 function render() {
+  closeDlg();
   destroyMaps();
   const { parts } = route();
   const head = parts[0] || '';
